@@ -1,0 +1,610 @@
+.library-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 128, 0, 0.3);
+  padding: 0px 0;
+}
+
+.library-controls h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.library-controls button {
+  padding: 8px 16px;
+  background-color: rgba(0, 128, 0, 0.3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+#navbar {
+  height: 65px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  /* center the flex items horizontally */
+  align-items: center;
+  background-color: #F3F1EB;
+  padding: 1px 1px;
+  /* reduce the top and bottom padding */
+  box-shadow: 0 0 5px #3a795a;
+  border-radius: 0px;
+  /* add rounded corners */
+  z-index: 9999;
+
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  /* center the items and leave empty space around them */
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: large;
+}
+
+#navbar li {
+  margin: 0 20px;
+  /* add equal margin on left and right */
+}
+
+#navbar li:last-child {
+  margin-right: 0;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+#navbar li:last-child>* {
+  margin-right: 0;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+
+#navitem a:hover {
+  font-weight: 2000;
+}
+
+#navbarBlack {
+  height: 65px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151313;
+  padding: 1px 1px;
+  box-shadow: 0 0 5px #3a795a;
+  border-radius: 0px;
+  z-index: 9999;
+}
+
+#navbarBlack ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: large;
+}
+
+#navbarBlack li {
+  margin: 0 20px;
+}
+
+#navbarBlack li:last-child {
+  margin-right: 0;
+  margin-left: 30px;
+  margin-top: 3px;
+  color: #fff !important;
+}
+
+#navbarBlack li:last-child>* {
+  margin-right: 0;
+  margin-left: 30px;
+  margin-top: 3px;
+  color: #fff !important;
+}
+
+#navbarBlack a {
+  text-decoration: none;
+  color: #fff;
+  /* change the text color to white */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+
+
+/* Style for the app page below the nav bar */
+
+#app_page {
+  margin-top: 50px;
+}
+
+#app_page h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  #app_page {
+    /* Styling for mobile devices */
+    margin-top: 30px;
+  }
+}
+
+
+#searchInput {
+  background-color: gray;
+  position: relative;
+  margin-top: 39px;
+  width: 600px;
+  height: 15px;
+  padding: 10px;
+  border: 1px solid #3a795a;
+  background: #F2F2F2;
+  border-radius: 15px;
+  outline: none;
+  color: #333333;
+  font-size: 0.5em;
+  transition: 0.5s;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
+.searchInput span {
+  position: absolute;
+  left: 20px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #707070;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.searchInput input:valid~span,
+.searchInput input:focus~span {
+  color: #61BC7C;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #F2F2F2;
+  border-left: 1px solid #61BC7C;
+  border-right: 1px solid #61BC7C;
+  letter-spacing: 0.2em;
+}
+
+.searchInput input:valid,
+.searchInput input:focus {
+  border: 1px solid #61BC7C;
+}
+
+#searchInput:hover {
+  box-shadow: 0 0 5px #3a795a;
+}
+
+#HeaderNYT {
+  font-size: x-large;
+
+}
+
+#app_page {
+  margin-top: 50px;
+  padding: 0 150px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#home,
+#myBooks {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#home img {
+  width: 150px;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+#myBooks a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+#logIn a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+#myRatings a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+
+
+#logOut a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+#addBook a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+
+  /* add rounded corners */
+}
+
+#myRatings:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#logIn:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#logOut:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#register a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+#register:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#registerNow:hover {
+  background-color: #0b66a8;
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#home:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#myBooks:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#logIn:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+#addBook:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 15px;
+  /* add rounded corners */
+  transition: background-color 0.5s;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#add-book-container {
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+}
+
+#Library {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+#Library h1 {
+  margin-right: 20px;
+}
+
+#addBook {
+  margin-left: auto;
+  margin-top: -70px;
+}
+
+ul {
+  list-style: none;
+}
+
+#Library {
+  margin-left: -35px;
+}
+
+/* Wrapper */
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #ffffff;
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #ffffff;
+}
+
+/* Title */
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.register-title {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Input fields */
+.login-input {
+  border: 1px solid #61BC7C;
+  height: 30px;
+  width: 500px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+.register-input {
+  border: 1px solid #61BC7C;
+  height: 30px;
+  width: 500px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  /* add rounded corners */
+}
+
+/* Submit button */
+.login-submit {
+  background-color: #61BC7C;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  /* add rounded corners */
+  width: 520px;
+}
+
+#registerNow {
+  background-color: #479ad6;
+  margin-top: 1.2rem;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  /* add rounded corners */
+  width: 520px;
+}
+
+.register-submit {
+  background-color: #61BC7C;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  /* add rounded corners */
+  margin-top: 15px;
+  width: 520px;
+}
+
+.login-submit:hover {
+  background-color: #449d5c;
+}
+
+.register-submit:hover {
+  background-color: #449d5c;
+}
+
+.book-form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 75px;
+  border-radius: 10px;
+}
+
+.book-form h2 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 1.75em;
+  color: #333333;
+}
+
+.book-form-dark h2 {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 1.75em;
+  color: #ffffff;
+}
+
+.review-header h1 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.book-form button[type="submit"] {
+  background-color: rgba(0, 128, 0, 0.5);
+  /* more transparent green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  /* added rounded edges */
+  transition: background-color 0.2s ease-in-out;
+  /* added a transition for the hover effect */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.book-form button[type="submit"]:hover {
+  background-color: rgba(0, 128, 0, 0.7);
+  font-family: "Nunito Sans", sans-serif;
+  /* darker green on hover */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+  font-family: "Nunito Sans", sans-serif;
+  /* lighter green border */
+}
+
+.form-group textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+  outline: none;
+  /* remove the default outline */
+  padding: 5px;
+  /* add some padding to make the text more readable */
+  resize: vertical;
+  /* allow the user to resize the box vertically */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: green;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.no-user-review {
+
+  text-align: right;
+}
+
+button[type="addreview"]:hover {
+  background-color: rgba(0, 128, 0, 0.7);
+  font-family: "Nunito Sans", sans-serif;
+  /* darker green on hover */
+}
+
+button[type="addreview"] {
+  background-color: rgba(0, 128, 0, 0.5);
+  /* more transparent green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  /* added rounded edges */
+  transition: background-color 0.2s ease-in-out;
+  /* added a transition for the hover effect */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.top-list {
+
+}
